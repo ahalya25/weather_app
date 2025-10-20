@@ -18,10 +18,10 @@
 
         {% if weather_data.city %}
         <div class="card mt-4 mx-auto" style="width:20rem;">
-            <div class=""card-body>
-                <h4>{{ weather_app.city|title }}</h4>
-                <p><strong>Temperature:</strong> {{ weather_dta.temperature }}0C</p>
-                <p><strong>Condition:</strong> {{ weather_data.description }}</p>
+            <div class="card-body">
+                <h4>{{ weather_data.city|title }}</h4>
+                <p><strong>Temperature:</strong> {{ weather_data.temperature }} C </p>
+                <p><strong>Condition:</strong> {{ weather_data.description|title }}</p>
                 <p><strong>Humidity:</strong>{{ weather_data.humidity }}%</p>
                 <p><strong>Pressure:</strong>{{ weather_data.Pressure }}hpa</p>
             </div>
